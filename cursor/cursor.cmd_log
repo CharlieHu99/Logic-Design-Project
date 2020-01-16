@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+xst -intstyle ise -ifn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.xst" -ofn "C:/Users/Charlie Stark/Desktop/logic/cursor/cursor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 "cursor.ngc" cursor.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cursor_map.ncd cursor.ngd cursor.pcf 
+par -w -intstyle ise -ol high -mt off cursor_map.ncd cursor.ncd cursor.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml cursor.twx cursor.ncd -o cursor.twr cursor.pcf 
